@@ -1,0 +1,89 @@
+/* AllocatedTime.css */
+
+/* Adjust container spacing */
+div {
+    margin-bottom: 8px;
+}
+
+/* Style label for better presentation */
+label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14px; /* Slightly increased font size */
+    color: #333; /* Darkened text color */
+}
+
+/* Style input for improved appearance */
+input {
+    width: calc(100% - 16px);
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-size: 14px; /* Slightly increased font size */
+    color: #555; /* Slightly darker text color */
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    animation: rainbow 2s infinite linear; /* Rainbow animation */
+}
+
+/* Add hover and focus effects */
+input:hover,
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle box shadow on focus */
+}
+
+/* Rainbow animation keyframes */
+@keyframes rainbow {
+    0% { border-color: hsl(0, 100%, 50%); } /* Red */
+    16.666% { border-color: hsl(60, 100%, 50%); } /* Yellow */
+    33.333% { border-color: hsl(120, 100%, 50%); } /* Green */
+    50% { border-color: hsl(180, 100%, 50%); } /* Cyan */
+    66.666% { border-color: hsl(240, 100%, 50%); } /* Blue */
+    83.333% { border-color: hsl(300, 100%, 50%); } /* Magenta */
+    100% { border-color: hsl(360, 100%, 50%); } /* Red again */
+}
+button {
+    color: #fff; /* White text color */
+    padding: 10px 16px; /* Adjust padding for a comfortable size */
+    font-size: 16px; /* Slightly increased font size */
+    border: none; /* Remove default border */
+    border-radius: 6px; /* Rounded corners for a modern look */
+    cursor: pointer; /* Change cursor on hover */
+    transition: transform 0.5s ease; /* Smooth transition for transform */
+    animation: changeColor 1s infinite; /* Color change animation with a duration of 1s */
+}
+
+/* Hover effect for better interactivity */
+button:hover {
+    transform: rotate(360deg); /* Rotate button on hover */
+}
+
+/* Color change animation keyframes */
+@keyframes changeColor {
+    0%, 100% {
+        background-color: #007bff; /* Initial and final background color */
+    }
+    12.5% {
+        background-color: #ff6347; /* Change color every 1s (12.5% of the animation duration) */
+    }
+    25% {
+        background-color: #00cc99;
+    }
+    37.5% {
+        background-color: #ffcc00;
+    }
+    50% {
+        background-color: #8a2be2;
+    }
+    62.5% {
+        background-color: #4caf50;
+    }
+    75% {
+        background-color: #ff4500;
+    }
+    87.5% {
+        background-color: #87ceeb;
+    }
+}
