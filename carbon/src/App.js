@@ -1,9 +1,12 @@
+// src/App.js
 import React, { useState } from 'react';
 import AllocatedTime from './components/AllocatedTime/AllocatedTime';
+import Assignee from './components/Assignee/Assignee'; // Import the Assignee component
 
 const TodoApp = () => {
   const [task, setTask] = useState('');
   const [allocatedTime, setAllocatedTime] = useState('');
+  const [assignee, setAssignee] = useState(''); // Add a state for the assignee
 
   const handleTaskChange = (event) => {
     setTask(event.target.value);
@@ -13,19 +16,25 @@ const TodoApp = () => {
     setAllocatedTime(newTime);
   };
 
-  const handleAddTask = () => {
-    // Handle adding the task to your to-do list with the allocated time
-    // You can use the 'task' and 'allocatedTime' states here.
+  const handleAssigneeChange = (newAssignee) => { // Add a handler for the assignee change
+    setAssignee(newAssignee);
   };
+  
+  const handleAddTask = () => {
+    // Add your task-adding logic here
+  };
+
+  // ...
 
   return (
     <div>
       <h1>Todo App</h1>
       <AllocatedTime
         onTimeChange={handleTimeChange}
-        onTaskChange={handleTaskChange} // Pass the task change handler to AllocatedTime
+        onTaskChange={handleTaskChange}
       />
-      <button onClick={handleAddTask}>Add Task</button>
+      <Assignee onAssigneeChange={handleAssigneeChange} /> {/* Use the Assignee component */}
+     /*<button onClick={handleAddTask}>Add Task</button>*/
     </div>
   );
 };

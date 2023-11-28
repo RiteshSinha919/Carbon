@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+/* src/App.css */
+
+/* Style the Assignee component */
+.Assignee {
+  margin-bottom: 20px;
+}
+
+.Assignee label {
+  font-weight: bold;
+  color: #333;
+}
+
+.Assignee input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
