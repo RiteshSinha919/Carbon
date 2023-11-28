@@ -1,0 +1,34 @@
+/* Priority.css */
+
+/* Adjust container spacing */
+div {
+    margin-bottom: 8px;
+}
+
+/* Style label for better presentation */
+label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Style input for improved appearance */
+input {
+    width: calc(100% - 16px);
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #555;
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Add hover and focus effects */
+input:hover,
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
