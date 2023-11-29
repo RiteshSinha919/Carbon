@@ -1,0 +1,13 @@
+.priority-container {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+}
+
+.priority {
+  height: 50%;
+  width: 50%;
+}

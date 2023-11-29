@@ -1,0 +1,72 @@
+.bar-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 45px;
+    margin: 20px 15px;
+    border: 1px solid #A9B388;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 10px;
+}
+
+.bar-container:hover{
+    border-color: #5F6F52;
+}
+
+.task-status{
+    width: fit-content;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.status-color-outer{
+    height: 18px;
+    width: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    border-radius: 100%;
+}
+
+.status-color-inner{
+    height: 15px;
+    width: 15px;
+    background-color: red;
+    border-radius: 100%;
+}
+
+
+.task-headline{
+    padding-left: 10px;
+    height: 100%;
+    min-width: 40%;
+    margin: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.task-info-container {
+    height: 100%;
+    min-width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.assigne {
+
+}
+
+.priority {
+
+}
+
+.deadline {
+ 
+}

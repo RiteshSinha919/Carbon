@@ -1,0 +1,27 @@
+.app {
+    position: relative;
+  }
+  
+  .floating-list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    z-index: 2;
+  }
+  
+  .floating-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .floating-list li {
+    margin-bottom: 5px;
+  }
+  
+  .floating-list button {
+    margin-top: 10px;
+  }
